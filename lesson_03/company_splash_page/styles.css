@@ -39,9 +39,11 @@ footer {
   padding: 1%;
 }
 
+footer ul {
+  margin: 0;
+}
+
 li {
-  list-style: none;
   display: inline;
-  margin-right: 1%;
-  padding: 0 5%;
+  padding: 0 62px;
 }
