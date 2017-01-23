@@ -1,0 +1,47 @@
+body {
+  background: #2f2840 url(assets/bg_body.gif);
+  text-align: center;
+  font: normal 20px Helvetica, Arial, sans-serif;
+  color: #4d4e4f;
+}
+
+header img {
+  margin-top: 5%;
+}
+
+main {
+  background: #fff;
+  margin: 5% auto 0;
+  padding: 2%;
+}
+
+main,
+footer {
+  width: 60%;
+  box-sizing: border-box;
+}
+
+article {
+  margin-bottom: 15%;
+}
+
+article h3 {
+  color: #7abfcc;
+}
+
+#about-us{
+  margin-top: 15%;
+}
+
+footer {
+  background: #cfd1cc;
+  margin: 0 auto 2%;
+  padding: 1%;
+}
+
+li {
+  list-style: none;
+  display: inline;
+  margin-right: 1%;
+  padding: 0 5%;
+}
