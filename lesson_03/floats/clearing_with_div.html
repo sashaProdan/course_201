@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Clearing Floats with Div</title>
+    <style>
+      #main {
+        background: yellow;
+        margin: 20px 0;
+      }
+
+      #main,
+      footer {
+        width: 70%;
+      }
+
+      #main div {
+        clear: both;  /* Clearing the floats */
+      }
+      
+      #first {
+        background: purple;
+      }
+
+      #second {
+        background: green;
+      }
+
+      #third {
+        background: blue;
+      }
+
+      #main section {
+        width: 25%;
+        float: left;
+        margin-right: 2%;
+        padding: 10px;
+      }
+
+      footer {
+        background: red;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="main">
+      <section id="first"><p>I am a section</p></section>
+      <section id="second"><p>I am also a section</p></section>
+      <section id="third"><p>I am another section</p></section>
+      <div></div>     <!--   Empty div element -->
+    </section>
+    <footer>I am a footer</footer>
+  </body>
+</html>
