@@ -1,0 +1,236 @@
+
+main {
+  font: normal 16px Helvetica, Arial, sans-serif;
+  margin: 1% auto;
+  padding: 2%;
+  width: 80%;
+  border: 2px solid #9a9b98;
+  box-sizing: border-box;
+  color: #555759;
+}
+
+h1,
+h2,
+.position-type {
+  color: #bf361e;
+}
+
+p {
+  line-height: 2em;
+}
+
+/*
+  -----------------------
+  Inline-elements Section
+  -----------------------
+*/
+
+#inline-elements ul {
+  border: 1px dashed #555759;
+  width: 60%;
+  padding: 3.2%;
+}
+
+#inline-elements a {
+  text-decoration: none;
+  color: #555759;
+}
+
+#inline-elements ul li {
+  display: inline-block;
+}
+
+#inline-elements ul:nth-of-type(2) a {
+  margin: 30px;
+}
+
+#inline-elements ul:nth-of-type(3) a,
+#inline-elements ul:last-of-type a {
+  padding: 30px;
+  background: #0a910c;
+  color: #fff;
+}
+
+#inline-elements ul:last-of-type a {
+  float: left;
+  margin: 30px;
+  border: 2px solid #066015;  
+}
+
+/*
+  ----------------------
+  Block-elements section
+  ----------------------
+*/
+
+#block-elements div {
+  color: #fff;
+}
+
+#block-elements div:first-of-type {
+  background: #137cf4;
+}
+
+#block-elements div:nth-of-type(2) {
+  height: 60px;
+  padding: 20px;
+  margin: 20px;
+  background: #0a910c;
+}
+
+#block-elements div:nth-of-type(3) {
+  width: 90px;
+  background: #d84629;
+}
+
+#first-float p:first-of-type {
+  float: left;
+  background: #137cf4;
+}
+
+#first-float p:last-of-type {
+  float: right;
+  background: #d84629;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#second-float p {
+  height: 60px;
+  width: 40%;
+  padding: 30px 20px 0;
+  text-align: center;
+}
+
+#second-float p:first-of-type {
+  background: #d84629;
+  float: left;
+}
+
+#second-float p:last-of-type {
+  background: #137cf4;
+  float: right;
+}
+
+#block-elements a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  background: #137cf4;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 10px 0;
+}
+
+/*
+  -----------------------------
+  Inline-Block elements Section
+  -----------------------------
+*/
+
+#inline-block {
+  border-bottom: 2px dashed #555759;
+  padding-bottom: 5%;
+}
+
+nav {
+  width: 80%;
+  margin: 2% auto;
+}
+#inline-block a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background: #137cf4;
+  text-align: center;
+  width: 15%;
+  margin-right: 10px;
+  padding: 20px 30px;
+}
+
+/*
+  ------------------------------
+  Floats and Positioning Section
+  ------------------------------
+*/
+
+#floats {
+  position: relative;
+}
+
+#floats h1 {
+  text-align: center;
+}
+
+#container div {
+  width: 50%;
+  height: 100px;
+  padding-top: 5%;
+}
+
+#container footer {
+  clear: both;
+  background: #0a910c;
+  height: 50px;
+  padding-top: 1.5%;
+}
+
+#container div, footer {
+  text-align: center;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+#container div:first-of-type {
+  float: left;
+  background: #d84629;
+}
+
+#container div:last-of-type {
+  float: right;
+  background: #137cf4;
+}
+
+#floats li {
+  font-style: italic;
+  line-height: 2em;
+}
+
+#relative,
+#absolute,
+#fixed {
+  color: #fff;
+  height: 40px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 30px 30px 20px;
+  vertical-align: middle;
+}
+
+#relative {
+  background: #d84629;
+  width: 250px;
+  position: relative;
+  right: 10%;
+  top: 30px;
+}
+
+#absolute {
+  background: #0a910c;
+  position: absolute;
+  left: 20%;
+  bottom: 15%;
+  width: 150px;
+}
+
+#fixed {
+  background: #137cf4;
+  width: 200px;
+  position: fixed;
+  left: 30px;
+  bottom: 40px;
+}
