@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Contact Form</title>
+    <style>
+    form {
+      width: 40%;
+    }
+    </style>
+  </head>
+  <body>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Contact</legend>
+        <dl>
+          <dt>
+            <label for="first_name">First Name:</label>
+          </dt>
+          <dd>
+            <input type="text" name="first_name" id="first_name">
+          </dd>
+
+          <dt>
+            <label for="last_name">Last Name:</label>
+          </dt>
+          <dd>
+            <input type="text" name="last_name" id="last_name">
+          </dd>
+
+          <dt>
+            <label for="email">Email:</label>
+          </dt>
+          <dd>
+            <input type="email" name="email" id="email" autocomplete="off" autocorrect="off" autocapitalize="none">
+          </dd>
+
+          <dt>
+            <label for="phone">Phone Number:</label>
+          </dt>
+          <dd>
+            <input type="tel" name="phone" id="phone">
+          </dd>
+        </dl>
+
+        <input type="submit" value="Submit">
+      </fieldset>
+    </form>
+  </body>
+</html>
