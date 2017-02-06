@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Contact Form</title>
+    <link rel="stylesheet" href="contact_form.css">
   </head>
   <body>
     <form action="#" method="post">
@@ -164,9 +165,14 @@
             </label>
           </li>
         </ul>
-        
-        <label for="comment">Comments</label>
-        <textarea name="comment" id="comment" cols="80" rows="6"></textarea>
+        <dl>
+          <dt>
+            <label for="comment">Comments</label>
+          </dt>
+          <dd>
+            <textarea name="comment" id="comment" cols="80" rows="6"></textarea>
+          </dd>
+        </dl>
         <input type="hidden" value="2017-02-06" name="timestamp"> 
         <input type="submit">
         <input type="reset">
