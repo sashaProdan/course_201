@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Your Profile Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <form>
+      <h1>Create Your Profile</h1>
+      <fieldset class="personal-info">
+        <h2>Personal Info</h2>
+        <dl>
+          <dt>
+            <label for="first_name">Your Name</label>
+          </dt>
+          <dd>
+            <input type="text" name="first_name" id="first_name" placeholder="First">
+            <input type="text" name="last_name" id="last_name" placeholder="Last">
+          </dd>
+          <dt>
+            <label for="email">Email</label>
+          </dt>
+          <dd>
+            <input type="email" name="email" id="email">
+          </dd>
+        </dl>
+      </fieldset>
+
+      <fieldset class="social">
+        <h2>Social Media Accounts</h2>
+        <dl>
+          <dt>
+            <label for="facebook">Facebook</label>
+          </dt>
+          <dd>
+            <input type="url" name="facebook" id="facebook">
+          </dd>
+          <dt>
+            <label for="twitter">Twitter</label>
+          </dt>
+          <dd>
+            <input type="url" name="twitter" id="twitter">
+          </dd>
+          <dt>
+            <label for="linkedin">Linkedin</label>
+          </dt>
+          <dd>
+            <input type="url" name="linkedin" id="linkedin">
+          </dd>
+        </dl>
+      </fieldset>
+
+      <fieldset class="account-info">
+        <h2>Account Info</h2>
+        <dl>
+          <dt>
+            <label for="profile_name">Profile Name</label>
+          </dt>
+          <dd>
+            <input type="text" name="profile_name" id="profile_name">
+          </dd>
+        </dl>
+        <dl>
+            <dt>
+              <label for="password">Password</label>
+            </dt>
+            <dd>
+              <input type="password" name="password" id="password">
+            </dd>
+            <dt>
+              <label for="password_confirmation">Confirm Password</label>
+            </dt>
+            <dd>
+              <input type="password" name="password_confirmation" id="password_confirmation">
+            </dd>
+        </dl>
+      </fieldset>
+
+      <fieldset>
+        <dl>
+          <dt>
+            <label for="bio">Bio</label>
+          </dt>
+          <dd>
+            <textarea name="bio" id="bio" cols="60" rows="6"></textarea>
+          </dd>
+        </dl>
+      </fieldset>
+
+      <fieldset>
+        <input type="checkbox" name="agreement">
+        <p>I agree to treat other users with respect, and will not say anything at all if I have nothing nice to say.</p>
+        <input type="submit" value="Create Account">
+      </fieldset>
+    </form>
+  </body>
+</html>
