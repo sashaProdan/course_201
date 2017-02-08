@@ -25,6 +25,7 @@ dt {
 label {
   color: #676767;
   font-weight: bold;
+  display: block;
 }
 
 input {
@@ -87,6 +88,10 @@ textarea {
   box-sizing: border-box;
 }
 
+.bio label {
+  color: inherit;
+}
+
 /*
   ----------
   Agreement
@@ -126,6 +131,7 @@ input[type="submit"] {
   cursor: pointer;
 }
 
+input[type="submit"]:focus,
 input[type="submit"]:hover {
   background: #6095cb;
 }
