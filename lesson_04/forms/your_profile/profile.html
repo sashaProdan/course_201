@@ -37,12 +37,18 @@
           <dd>
             <input type="url" name="facebook" id="facebook">
           </dd>
+        </dl><!--
+
+        --><dl>
           <dt>
             <label for="twitter">Twitter</label>
           </dt>
           <dd>
             <input type="url" name="twitter" id="twitter">
           </dd>
+        </dl><!--
+
+        --><dl>
           <dt>
             <label for="linkedin">Linkedin</label>
           </dt>
@@ -62,36 +68,46 @@
             <input type="text" name="profile_name" id="profile_name">
           </dd>
         </dl>
-        <dl>
-            <dt>
-              <label for="password">Password</label>
-            </dt>
-            <dd>
-              <input type="password" name="password" id="password">
-            </dd>
-            <dt>
-              <label for="password_confirmation">Confirm Password</label>
-            </dt>
-            <dd>
-              <input type="password" name="password_confirmation" id="password_confirmation">
-            </dd>
+
+        <dl class="two-column">
+          <dt>
+            <label for="password">Password</label>
+          </dt>
+          <dd>
+            <input type="password" name="password" id="password">
+          </dd>
+        </dl>
+
+        <dl class="two-column">
+          <dt>
+            <label for="password_confirmation">Confirm Password</label>
+          </dt>
+          <dd>
+            <input type="password" name="password_confirmation" id="password_confirmation">
+          </dd>
         </dl>
       </fieldset>
 
       <fieldset>
         <dl>
           <dt>
-            <label for="bio">Bio</label>
+            <h2>Bio</h2>
           </dt>
           <dd>
-            <textarea name="bio" id="bio" cols="60" rows="6"></textarea>
+            <textarea name="bio" id="bio" cols="60" rows="8"></textarea>
           </dd>
         </dl>
       </fieldset>
 
-      <fieldset>
-        <input type="checkbox" name="agreement">
-        <p>I agree to treat other users with respect, and will not say anything at all if I have nothing nice to say.</p>
+      <fieldset class="agreement">
+        <dl>
+          <dt>
+            <input type="checkbox" name="agreement">
+          </dt>
+          <dd>
+            <p>I agree to treat other users with respect, and will not say anything at all if I have nothing nice to say.</p>
+          </dd>
+        </dl>
         <input type="submit" value="Create Account">
       </fieldset>
     </form>

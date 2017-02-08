@@ -29,14 +29,15 @@ label {
 
 input {
   height: 39px;
-  padding: 11px 0 13px 10px;
-  font-size: 16px;
+  width: 100%;
 }
 
 input,
 textarea {
+  font-size: 16px;
   border: 1px solid #2e67b2;
   border-radius: 5px;
+  padding: 11px 11px 13px 10px;
   margin-bottom: 25px;
   box-sizing: border-box;
 }
@@ -46,23 +47,10 @@ textarea {
   width: 100%;
 }
 
-
-input[type="submit"] {
-  background: #2e67b2;
-  color: #fff;
-  width: 176px;
-  height: 45px;
-  font-size: 16px;
-}
-
-input[type="submit"]:hover {
-  background: #6095cb;
-}
-
 /*
-  -----------------
+  --------------
   Personal Info
-  -----------------
+  --------------
 */
 
 .personal-info input[type="text"] {
@@ -72,4 +60,72 @@ input[type="submit"]:hover {
 
 .personal-info input[type="email"] {
   width: 100%;
+}
+
+/*
+  -------------
+  Social Media
+  -------------
+*/
+
+.social dl {
+  display: inline-block;
+  box-sizing: border-box;
+  margin-right: 1%;
+  width: 32.3%;
+}
+
+/*
+  -------------
+  Account Info
+  -------------
+*/
+
+.two-column {
+  display: inline-block;
+  width: 49.4%;
+  box-sizing: border-box;
+}
+
+/*
+  ----------
+  Agreement
+  ----------
+*/
+
+.agreement input[type="checkbox"] {
+  float: left;
+  margin: 0;
+  width: 5%;
+
+}
+.agreement dd {
+  float: right;
+  width: 94%;
+  margin: 0;
+}
+
+.agreement dl {
+  overflow: auto;
+  margin: 25px 0;
+}
+
+.agreement p {
+  color: #676767;
+  font: normal 16px Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+
+input[type="submit"] {
+  clear: both;
+  background: #2e67b2;
+  color: #fff;
+  width: 176px;
+  height: 45px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background: #6095cb;
 }
