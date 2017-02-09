@@ -1,0 +1,147 @@
+body {
+  background: #2f2840 url(images/bg_body.gif);
+  text-align: center;
+  font: normal 20px Helvetica, Arial, sans-serif;
+  color: #4d4e4f;
+  margin: 0;
+}
+
+header img {
+  margin-top: 5%;
+}
+
+main {
+  background: #fff;
+  margin: 5% 0 0;
+  padding: 100px;
+}
+
+main,
+footer {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+nav li {
+  display: inline;
+  padding: 0 30px;
+}
+
+nav {
+  margin-top: 119px;
+}
+
+nav a {
+  font: 26px normal Helvetica, Arial, sans-serif;
+  color: #cacaca;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+nav a:active {
+  font-weight: bold;
+  color: #6db9ff;
+}
+
+article {
+  margin: 0 auto;
+  padding: 2%;
+}
+
+article h3 {
+  color: #7abfcc;
+}
+
+footer {
+  background: #cfd1cc;
+  padding: 75px 0;
+}
+
+footer p {
+  color: #b2b2b2;
+  width: 60%;
+  margin: 0 auto 3%;
+}
+
+footer ul {
+  margin: 0 auto;
+  list-style: none;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+footer li a {
+  width: 49px;
+  height: 49px;
+  display: block;
+  text-indent: -150%;
+  margin-right: 50px;
+  overflow: hidden;
+  background: transparent url("images/icons_social-media.png") 0 0 no-repeat;
+  background-size: 49px;
+}
+
+footer li a.facebook {
+  background-position: 0 -49px;
+}
+
+footer li a.email {
+  background-position: 0 -98px;
+}
+
+footer li a.instagram {
+  background-position: 0 100%;
+}
+
+
+/*
+  ---------------
+  Projects styles
+  ---------------
+*/
+
+#projects img {
+  padding-bottom: 2%;
+  width: 100%;
+}
+
+#projects article {
+  margin-bottom: 5%;
+}
+
+#projects h3 {
+  color: #3e59b2;
+}
+
+#projects p {
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+/*
+  -----------
+  Team styles
+  -----------
+*/
+
+#team dl {
+  display: inline-block;
+  width: 18%;
+  box-sizing: border-box;
+  margin-top: 5%;
+}
+
+#team dd {
+  margin: 0;
+}
+
+#team dd p {
+  color: #3e59b2;
+}
+
+#team h2 {
+  margin-bottom: 5%;
+}
