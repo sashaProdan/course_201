@@ -1,13 +1,18 @@
 body {
-  background: #2f2840 url(images/bg_body.gif);
+  background: #2f2840 url("images/bg_body.gif");
   text-align: center;
-  font: normal 20px Helvetica, Arial, sans-serif;
+  font: normal 20px "Avenir", Helvetica, Arial, sans-serif;
   color: #4d4e4f;
   margin: 0;
+  padding: 135px 0 0 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 header img {
-  margin-top: 5%;
+  margin: 0 0 115px 0;
 }
 
 main {
@@ -22,23 +27,30 @@ footer {
   box-sizing: border-box;
 }
 
-nav li {
-  display: inline;
-  padding: 0 30px;
+h2:before,
+h2:after {
+  display: inline-block;
+  font-size: 24px;
+  content: "\2022";
+  vertical-align: 5px;
+  padding: 0 24px;
 }
 
 nav {
-  margin-top: 119px;
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+nav li {
+  display: inline;
+  padding: 0 42px;
 }
 
 nav a {
-  font: 26px normal Helvetica, Arial, sans-serif;
   color: #cacaca;
-  text-transform: uppercase;
-  text-decoration: none;
 }
 
-nav a:active {
+nav a.active {
   font-weight: bold;
   color: #6db9ff;
 }
@@ -50,16 +62,17 @@ article {
 
 article h3 {
   color: #7abfcc;
+  font-size: 24px;
 }
 
 footer {
-  background: #cfd1cc;
+  background: #e7e7e7;
   padding: 75px 0;
 }
 
 footer p {
   color: #b2b2b2;
-  width: 60%;
+  width: 50%;
   margin: 0 auto 3%;
 }
 
@@ -76,25 +89,16 @@ footer li a {
   width: 49px;
   height: 49px;
   display: block;
-  text-indent: -150%;
-  margin-right: 50px;
+  text-indent: -9999px;
   overflow: hidden;
+  margin-right: 62px;
   background: transparent url("images/icons_social-media.png") 0 0 no-repeat;
   background-size: 49px;
 }
 
-footer li a.facebook {
-  background-position: 0 -49px;
-}
-
-footer li a.email {
-  background-position: 0 -98px;
-}
-
-footer li a.instagram {
-  background-position: 0 100%;
-}
-
+footer li a.facebook { background-position: 0 -49px; }
+footer li a.email { background-position: 0 -98px; }
+footer li a.instagram { background-position: 0 100%; }
 
 /*
   ---------------
@@ -102,22 +106,16 @@ footer li a.instagram {
   ---------------
 */
 
-#projects img {
-  padding-bottom: 2%;
-  width: 100%;
-}
-
-#projects article {
+.projects article {
   margin-bottom: 5%;
 }
 
-#projects h3 {
+.projects h3 {
   color: #3e59b2;
 }
 
-#projects p {
-  width: 80%;
-  margin: 0 auto;
+.projects p {
+  padding: 0 130px;
 }
 
 
@@ -127,21 +125,27 @@ footer li a.instagram {
   -----------
 */
 
-#team dl {
+.team dl {
   display: inline-block;
   width: 18%;
   box-sizing: border-box;
   margin-top: 5%;
 }
 
-#team dd {
-  margin: 0;
+.team dd {
+  margin: 10px 0 0 0;
 }
 
-#team dd p {
+.team p {
+  padding-bottom: 7%;
+}
+
+.team dd a {
   color: #3e59b2;
+  font-weight: 500;
+  font-size: 24px;
 }
 
-#team h2 {
+.team h2 {
   margin-bottom: 5%;
 }
