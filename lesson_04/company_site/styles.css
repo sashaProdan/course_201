@@ -4,7 +4,6 @@ body {
   font: normal 20px "Avenir", Helvetica, Arial, sans-serif;
   color: #4d4e4f;
   margin: 0;
-  padding: 135px 0 0 0;
 }
 
 a {
@@ -12,7 +11,7 @@ a {
 }
 
 header img {
-  margin: 0 0 115px 0;
+  padding: 135px 0 115px 0;
 }
 
 main {
@@ -118,6 +117,10 @@ footer li a.instagram { background-position: 0 100%; }
   padding: 0 130px;
 }
 
+.projects figure img {
+  width: 100%;
+}
+
 
 /*
   -----------
@@ -148,4 +151,82 @@ footer li a.instagram { background-position: 0 100%; }
 
 .team h2 {
   margin-bottom: 5%;
+}
+
+/*
+  ----------------
+  Media Queries
+  ----------------
+*/
+
+@media (max-width: 875px) {
+  .team dl {
+    width: 48%;
+    padding: 0 0 30px 0;
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  header img {
+    padding: 20px;
+    width: 223px;
+    height: 182px;
+  }
+
+  nav li {
+    padding: 0 20px;
+  }
+
+  main {
+    padding: 50px;
+  }
+
+  article {
+    padding: 0.5%;
+  }
+  
+  article p {
+    text-align: justify;
+  }
+
+  footer li a {
+    margin-right: 32px;
+  }
+
+  footer {
+    padding: 30px;
+  }
+
+  nav {
+    font-size: 20px;
+  }
+
+  h2:before,
+  h2:after {
+    vertical-align: 2px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 18px;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  .projects p {
+    padding: 0 20px;
+  }
+
+  footer p {
+    width: 80%;
+  }
+
+  h2:before,
+  h2:after {
+    vertical-align: 0;
+  }
 }
