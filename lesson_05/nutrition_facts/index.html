@@ -3,129 +3,116 @@
   <head>
     <meta charset="UTF-8">
     <title>Nutrition Facts</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <main>
+      <h1>Nutrition Facts</h1>
+      <p>Serving Size 2/3 cup (55g)</p>
+      <p>Servings Per Container About 8</p>
+
+      <h2>Amount Per Serving</h2>
+      <ul>
+        <li><span class="bold">Calories</span> 230</li>
+        <li>Calories from Fat 40</li>
+      </ul>
+      
+      <h2>% Daily Value*</h2>
       <table>
-        <thead>
-          <tr>
-            <td><span>Nutrition Facts</span></td>
-          </tr>
-          <tr>
-            <td colspan="6">Serving Size 2/3 cup (55g)</td>
-          </tr>
-          <tr>
-            <td colspan="6">Serving Per Container About 8</td>
-          </tr>
-        </thead>
+        <tr>
+          <th scope="row"><span class="bold">Total Fat</span> 8g</th>
+          <td class="bold">12%</td>
+        </tr>
+        <tr>
+          <th scope="row">Saturated Fat 1g</th>
+          <td class="bold">5%</td>
+        </tr>
+        <tr>
+          <th scope="row" colspan="2"><em>Trans</em> Fat 0g</th>
+        </tr>
+        <tr>
+          <th scope="row"><span class="bold">Cholesterol</span> 0mg</th>
+          <td class="bold">0%</td>
+        </tr>
+        <tr>
+          <th scope="row"><span class="bold">Sodium</span> 160mg</th>
+          <td class="bold">7%</td>
+        </tr>
+        <tr>
+          <th scope="row"><span class="bold">Total Carbohydrate</span> 37g</th>
+          <td class="bold">12%</td>
+        </tr>
+        <tr>
+          <th scope="row">Dietary Fiber 4g</th>
+          <td class="bold">16%</td>
+        </tr>
+        <tr>
+          <th scope="row" colspan="2">Sugars 1g</th>
+        </tr>
+        <tr>
+          <th scope="row" colspan="2"><span class="bold">Protein</span> 3g</th>
+        </tr>
+        <tr>
+          <th scope="row">Vitamin A</th>
+          <td>10%</td>
+        </tr>
+        <tr>
+          <th scope="row">Vitamin C</th>
+          <td>8%</td>
+        </tr>
+        <tr>
+          <th scope="row">Calcium</th>
+          <td>20%</td>
+        </tr>
+        <tr>
+          <th scope="row">Iron</th>
+          <td>45%</td>
+        </tr>
+      </table>
 
-        <tbody>
-          <tr>
-            <td colspan="6"><span>Amount Per Serving</span></td>
-          </tr>
-          <tr>
-            <td><span>Calories</span> 230</td>
-            <td colspan="5">Calories from Fat 40</td>
-          </tr>
-          <tr>
-            <td colspan="6"><span>% Daily Value*</span></td>
-          </tr>
-          <tr>
-            <td><span>Total Fat</span> 8g</td>
-            <td colspan="5"><span>12%</span></td>
-          </tr>
-          <tr>
-            <td class="offset">Saturated Fat 1g</td>
-            <td colspan="5"><span>5%</span></td>
-          </tr>
-          <tr>
-            <td class="offset" colspan="6"><i>Trans</i> Fat 0g</td>
-          </tr>
-          <tr>
-            <td><span>Cholesterol</span> 0mg</td>
-            <td colspan="5"><span>0%</span></td>
-          </tr>
-          <tr>
-            <td><span>Sodium</span> 160mg</td>
-            <td colspan="5"><span>7%</span></td>
-          </tr>
-          <tr>
-            <td><span>Total Carbohydrate</span> 37g</td>
-            <td colspan="5"><span>12%</span></td>
-          </tr>
-          <tr>
-            <td class="offset">Dietary Fiber 4g</td>
-            <td colspan="5"><span>16%</span></td>
-          </tr>
-          <tr>
-            <td class="offset" colspan="6">Sugars 1g</td>
-          </tr>
-          <tr>
-            <td colspan="6"><span>Protein 3g</span></td>
-          </tr>
-          <tr>
-            <td>Vitamin A</td>
-            <td colspan="5">10%</td>
-          </tr>
-          <tr>
-            <td>Vitamin C</td>
-            <td colspan="5">8%</td>
-          </tr>
-          <tr>
-            <td>Calcium</td>
-            <td colspan="5">20%</td>
-          </tr>
-          <tr>
-            <td>Iron</td>
-            <td colspan="5">45%</td>
-          </tr>
-          <tr>
-            <td colspan="6"><p>Percent Daily Values are based on a 2,000 calorie diet. Your daily value may be higher or lower depending on your calorie needs.</p></td>
-          </tr>
-        </tbody>
+      <sup>*</sup><p>Percent Daily Values are based on a 2,000 calorie diet. Your daily value may be higher or lower depending on your calorie needs.</p>
 
-        <tfoot>
-          <tr>
-            <td colspan="4">Calories</td>
-            <td>2,000</td>
-            <td>2,500</td>
-          </tr>
-          <tr>
-            <td colspan="3">Total Fat</td> 
-            <td>Less than</td> 
-            <td>65g</td> 
-            <td>80g</td>
-          </tr>
-          <tr>
-            <td class="offset" colspan="3">Sat Fat</td> 
-            <td>Less than</td> 
-            <td>20g</td> 
-            <td>25g</td>
-          </tr>
-          <tr>
-            <td colspan="3">Cholesterol</td> 
-            <td>Less than</td> 
-            <td>300mg</td>
-            <td>300mg</td>
-          </tr>
-          <tr>
-            <td colspan="3">Sodium</td>
-            <td>Less than</td> 
-            <td>2,400mg</td> 
-            <td>2,400mg</td>
-          </tr>
-          <tr>
-            <td colspan="4">Total Carbohydrate</td>
-            <td>300g</td>
-            <td>375g</td>
-          </tr>
-          <tr>
-            <td class="offset" colspan="4">Dietary Fiber</td>
-            <td>25g</td>
-            <td>30g</td>
-          </tr>
-        </tfoot>
+      <table>
+        <tr>
+          <th scope="row" colspan="2">Calories:</th>
+          <td>2,000</td>
+          <td>2,500</td>
+        </tr>
+        <tr>
+          <th scope="row">Total Fat</th> 
+          <td>Less than</td> 
+          <td>65g</td> 
+          <td>80g</td>
+        </tr>
+        <tr>
+          <th scope="row">Sat Fat</th> 
+          <td>Less than</td> 
+          <td>20g</td> 
+          <td>25g</td>
+        </tr>
+        <tr>
+          <th scope="row">Cholesterol</th> 
+          <td>Less than</td> 
+          <td>300mg</td>
+          <td>300mg</td>
+        </tr>
+        <tr>
+          <th scope="row">Sodium</th>
+          <td>Less than</td> 
+          <td>2,400mg</td> 
+          <td>2,400mg</td>
+        </tr>
+        <tr>
+          <th scope="row" colspan="2">Total Carbohydrate</th>
+          <td>300g</td>
+          <td>375g</td>
+        </tr>
+        <tr>
+          <th scope="row" colspan="2">Dietary Fiber</th>
+          <td>25g</td>
+          <td>30g</td>
+        </tr>
       </table>
     </main>
   </body>
