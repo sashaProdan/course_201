@@ -1,3 +1,11 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
 header {
   background: #3d3d3d;
   color: #fff;
@@ -29,12 +37,92 @@ nav > ul li:last-child {
 nav a {
   font: normal 20px Helvetica, Arial, sans-serif;
   color: #fff;
-  text-decoration: none;
   text-transform: uppercase;
+}
+
+nav a:hover {
+  color: #f5dc39;
 }
 
 .active {
   color: #50c3af;
 }
 
+/*
+  -------------
+  Main Content
+  -------------
+*/
 
+main {
+  padding: 100px;
+  overflow: auto;
+}
+
+#content {
+  float: left;
+  width: 69%;
+  font-size: 20px;
+  line-height: 25px;
+  color: #45494d;
+  padding-right: 100px;
+  box-sizing: border-box;
+}
+
+article h2 {
+  font-size: 36px;
+  font-weight: bold;
+  padding-bottom: 34px;
+}
+
+article p {
+  padding-bottom: 42px;
+}
+
+p > a {
+  color: #50c3af;
+}
+
+aside {
+  float: right;
+  background: #f6f7f8;
+  width: 30%;
+  box-sizing: border-box;
+  padding: 40px 36px;
+}
+
+aside h2 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  color: #384048;
+  padding-bottom: 34px;
+}
+
+aside p,
+aside li a {
+  font-size: 14px;
+  line-height: 24px;
+  color: #787b80;
+}
+
+aside li a:hover {
+  color: #50c3af;
+}
+
+aside ul li:before {
+  content: "\003E";
+  color: #f6f7f8;
+  background: #6c6c6c;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  font-size: 8px;
+  padding: 2px 4px;
+  margin: 0 13px 3px 0;
+
+}
+
+aside ul {
+  padding-bottom: 122px;
+}
