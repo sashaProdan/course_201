@@ -6,6 +6,14 @@ a {
   text-decoration: none;
 }
 
+h3 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  color: #384048;
+  padding-bottom: 34px;
+}
+
 header {
   background: #3d3d3d;
   color: #fff;
@@ -26,7 +34,7 @@ header > figure {
 }
 
 nav > ul li {
-  display: inline-block;
+  display: inline;
   padding: 0 63px 0 0;
 }
 
@@ -50,7 +58,7 @@ nav a:hover {
 
 main,
 footer {
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -61,11 +69,11 @@ main {
 
 #content {
   float: left;
-  width: 75%;
+  width: 73%;
   font-size: 20px;
-  line-height: 25px;
+  line-height: 1.5rem;
   color: #45494d;
-  padding-right: 100px;
+  padding-right: 11%;
   box-sizing: border-box;
 }
 
@@ -116,14 +124,6 @@ aside {
   width: 25%;
   padding: 40px 36px;
   box-sizing: border-box;
-}
-
-aside h2 {
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: bold;
-  color: #384048;
-  padding-bottom: 34px;
 }
 
 aside p {
@@ -229,7 +229,7 @@ form dd {
 }
 
 form textarea {
-  resize: vertical;
+  resize: none;
 }
 
 form input[type="submit"] {
@@ -237,140 +237,10 @@ form input[type="submit"] {
   cursor: pointer;
 }
 
-/*
-  --------------
-  Media Queries
-  --------------
-*/
-
 @media (max-width: 768px) {
-  main,
-  footer {
-    width: 100%;
-    margin: 0;
-  }
-
-  main {
-    padding: 100px 0 100px 0;
-  }
-
-  #content {
-    padding-right: 100px;
-  }
-
-  header {
-    padding: 0 0 25px;
-  }
-
-  header h1 {
-    padding: 48px 0 50px;
-    font-size: 50px;
-  }
+  
 }
 
 @media (max-width: 600px) {
-  header h1 {
-    font-size: 40px;
-  }
-
-  nav a {
-    font-size: 18px;
-  }
-
-  nav > ul li {
-    padding: 0 30px 0 0;
-  }
-
-  figure > img {
-    width: 400px;
-  }
-
-  article h2 > a {
-    font-size: 26px;
-  }
-
-  #content {
-    font-size: 15px;
-    padding: 0 50px 0  0;
-  }
-
-  aside {
-    padding: 30px 26px;
-  }
-
-  aside h2 {
-    font-size: 13px;
-  }
-
-  aside p,
-  aside li a {
-    font-size: 12px;
-    line-height: 20px;
-    word-spacing: 0;
-  }
-
-  aside ul {
-    padding-bottom: 80px;
-  }
+  
 }
-
-@media (max-width: 480px) {
-  header h1 {
-    font-size: 30px;
-    letter-spacing: 15px;
-  }
-
-  nav a {
-    font-size: 16px;
-  }
-
-  nav > ul li {
-    padding: 0 15px 0 0;
-  }
-
-  figure > img {
-    width: 350px;
-  }
-
-  header > figure {
-    margin: 0 0 80px;
-  }
-
-  main {
-    padding: 50px 0 20px 0;
-  }
-
-  #content {
-    font-size: 14px;
-    padding: 0 30px 30px 0;
-  }
-
-  article h2 {
-    padding-bottom: 15px;
-  }
-
-  article h2 + p {
-    padding-bottom: 15px;
-  }
-
-  a.button {
-    font-size: 12px;
-    padding: 1px 18px;
-  }
-
-  aside h2 {
-    font-size: 11px;
-  }
-
-  aside {
-    padding: 30px 15px;
-  }
-
-  aside p,
-  aside li a {
-    font-size: 10px;
-    line-height: 15px;
-    word-spacing: 0;
-  }
-}
-
