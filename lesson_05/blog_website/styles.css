@@ -70,11 +70,19 @@ main {
 #content {
   float: left;
   width: 73%;
-  font-size: 20px;
-  line-height: 1.5rem;
   color: #45494d;
   padding-right: 11%;
   box-sizing: border-box;
+}
+
+#content, 
+.comments {
+  text-align: justify;
+}
+
+article {
+  line-height: 1.5rem;
+  font-size: 20px;
 }
 
 article h2 {
@@ -103,7 +111,7 @@ p > a {
 .button {
   border-radius: 20px;
   display: inline-block;
-  font-size: 14px;
+  font-size: 16px;
   color: #f5f5f5;
   padding: 5px 25px;
 }
@@ -168,6 +176,7 @@ footer p {
 */
 
 .comments {
+  line-height: 1.5rem;
   margin-top: 50px;
 }
 .comments h2:first-child {
@@ -238,9 +247,48 @@ form input[type="submit"] {
 }
 
 @media (max-width: 768px) {
-  
+  header {
+    padding-bottom: 20px;
+  }
+
+  header h1 {
+    font-size: 55px;
+    padding-top: 48px;
+  }
+
+  main {
+    padding: 80px 0;
+  }
+
+  article h2 {
+    padding-bottom: 16px;
+  }
+
+  article h2 > a {
+    font-size: 28px;
+  }
+
+  article p {
+    padding-bottom: 30px;
+  }
+
+  #content {
+    padding-right: 8%;
+  }
+
+  .comments h2 {
+    font-size: 28px;
+  }
+   
+  .comments h2:nth-of-type(2) {
+    padding-top: 55px;
+  }
 }
 
 @media (max-width: 600px) {
   
+}
+
+@media (max-width: 480px) {
+
 }
