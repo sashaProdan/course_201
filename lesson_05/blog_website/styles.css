@@ -286,6 +286,33 @@ form input[type="submit"] {
 }
 
 @media (max-width: 600px) {
+  #content {
+    width: 100%;
+    padding-right: 0;
+    padding: 20px;
+    margin-bottom: 50px;
+  }
+
+  article {
+    padding-bottom: 50px;
+  }
+
+  aside {
+    clear: both;
+    float: none;
+    width: 100%;
+    padding: 40px;
+  }
+
+  aside ul {
+    padding-bottom: 0;
+  }
+
+  .aside-section {
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+  }
   
 }
 
