@@ -1,0 +1,12 @@
+.row {
+  clear: both;
+}
+
+.fourth {
+  float: left;
+  width: 23.5%;
+}
+
+.fourth + .fourth {
+  margin-left: 2%;
+}
