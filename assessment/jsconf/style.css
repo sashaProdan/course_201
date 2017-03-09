@@ -1,0 +1,63 @@
+body {
+  font: 16px normal Helvetica, Arial, sans-serif;
+}
+
+header nav {
+  padding: 10px 0 15px;
+  border-top: 10px solid #f4f3f3;
+  border-bottom: 1px solid #f4f3f3;
+}
+
+header nav li {
+  display: inline-block;
+  padding-right: 40px;
+}
+
+header nav li:last-child {
+  padding-right: 0;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a {
+  font: 0.63rem normal Helvetica, Arial, sans-serif;
+  color: #3c3c3c;
+  letter-spacing: 0.4px;
+}
+
+figure {
+  background: url("images/front.jpg") no-repeat;
+  width: 96%;
+  padding-top: 9%;
+  height: 428px;
+  margin: 0 auto 1px;
+}
+
+header, main { text-align: center; }
+
+main {
+  margin: 0 auto;
+  width: 96%;
+}
+
+.border-bottom { border-bottom: 1px solid #f4f3f3; }
+
+main div:first-child { height: 428px; }
+main figure h1,
+main figure h2 {
+  color: #fff;
+}
+
+main figure h1 {
+  font-size: 3.5rem;
+  padding: 0.9% 0;
+}
+
+main figure h2 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
