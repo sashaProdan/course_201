@@ -1,16 +1,23 @@
 body {
-  font: 16px normal Helvetica, Arial, sans-serif;
+  font: 16px normal;
+  font-family: 'Open Sans', Arial, sans-serif;
+  letter-spacing: 0.4px;
+}
+
+.border-bottom { 
+  border-bottom: 1px solid #f4f3f3;
+  padding: 0 0 80px;
 }
 
 header nav {
-  padding: 10px 0 15px;
+  padding: 10px 0;
   border-top: 10px solid #f4f3f3;
   border-bottom: 1px solid #f4f3f3;
 }
 
 header nav li {
   display: inline-block;
-  padding-right: 40px;
+  padding-right: 45px;
 }
 
 header nav li:last-child {
@@ -23,27 +30,33 @@ a {
 }
 
 nav a {
-  font: 0.63rem normal Helvetica, Arial, sans-serif;
   color: #3c3c3c;
-  letter-spacing: 0.4px;
+  font-size: 0.65rem;
 }
 
-figure {
+nav a:hover {
+  text-decoration: underline;
+}
+
+.wallpaper {
+  padding: 0;
+}
+
+.wallpaper figure {
   background: url("images/front.jpg") no-repeat;
   width: 96%;
   padding-top: 9%;
   height: 428px;
   margin: 0 auto 1px;
+  box-sizing: border-box;
 }
 
 header, main { text-align: center; }
 
 main {
   margin: 0 auto;
-  width: 96%;
+  width: 99%;
 }
-
-.border-bottom { border-bottom: 1px solid #f4f3f3; }
 
 main div:first-child { height: 428px; }
 main figure h1,
@@ -53,11 +66,65 @@ main figure h2 {
 
 main figure h1 {
   font-size: 3.5rem;
-  padding: 0.9% 0;
 }
 
 main figure h2 {
   text-transform: uppercase;
   font-size: 1.5rem;
+}
+
+h1, p {
+  font-weight: 300;
+}
+
+main .tickets h1,
+main .speakers h1 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 2.3rem;
+  color: #3c3c3c;
+  padding: 60px 0 30px;
+}
+
+main .tickets p {
+  padding: 0 0 20px;
+}
+
+main .tickets a {
+  background-color: #3e8e05;
+  padding: 10px 28px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #fff;
+  text-transform: none;
+}
+
+.tickets a:hover {
+  background-color: #316d06;
+}
+
+.speakers section {
+  margin: 0 20%;
+}
+
+.speakers section figure {
+  display: inline-block;
+  border: 1px solid #f4f3f3;
+  margin: 5px;
+  width: 280px;
+  height: 378px;
+  vertical-align: top;
+  text-align: center;
+}
+
+.speakers section figure img {
+  height: 230px;
+  margin: 0 0 25px;
+  box-sizing: border-box;
+}
+
+.speakers figure figcaption {
+  color: #316d06;
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 
