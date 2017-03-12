@@ -9,6 +9,19 @@ body {
   padding: 0 0 80px;
 }
 
+.green-btn {
+  background-color: #3e8e05;
+  padding: 10px 28px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #fff;
+  text-transform: none;
+}
+
+.green-btn:hover {
+  background-color: #316d06;
+}
+
 header nav {
   padding: 10px 0;
   border-top: 10px solid #f4f3f3;
@@ -88,19 +101,6 @@ main .tickets p {
   padding: 0 0 20px;
 }
 
-main .tickets a {
-  background-color: #3e8e05;
-  padding: 10px 28px;
-  font-size: 0.8rem;
-  font-weight: bold;
-  color: #fff;
-  text-transform: none;
-}
-
-.tickets a:hover {
-  background-color: #316d06;
-}
-
 .speakers section {
   margin: 0 20%;
 }
@@ -171,4 +171,23 @@ table td > img {
   height: 50%;
   vertical-align: middle;
   text-align: center;
+}
+
+.papers p {
+  text-align: left;
+  padding-bottom: 15px;
+}
+
+.papers {
+  margin: 0 20%;
+}
+
+.papers p a:not(.green-btn) {
+  text-transform: none;
+  color: #316d06;
+  font-weight: 600;
+}
+
+.papers p a:not(.green-btn):hover {
+  text-decoration: underline;
 }
