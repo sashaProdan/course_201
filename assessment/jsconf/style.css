@@ -77,8 +77,7 @@ h1, p {
   font-weight: 300;
 }
 
-main .tickets h1,
-main .speakers h1 {
+main h1 {
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 2.3rem;
   color: #3c3c3c;
@@ -106,7 +105,7 @@ main .tickets a {
   margin: 0 20%;
 }
 
-.speakers section figure {
+.speakers section .speaker {
   display: inline-block;
   border: 1px solid #f4f3f3;
   margin: 5px;
@@ -116,15 +115,60 @@ main .tickets a {
   text-align: center;
 }
 
-.speakers section figure img {
+.speakers section .speaker img {
   height: 230px;
   margin: 0 0 25px;
   box-sizing: border-box;
 }
 
-.speakers figure figcaption {
+.speakers .speaker h2 {
   color: #316d06;
   font-weight: 600;
   font-size: 1.2rem;
 }
 
+.schedule {
+  margin: 0 20%;
+}
+
+table td {
+  border-bottom: 1px solid #f4f3f3;
+  padding: 12px;
+  vertical-align: middle;  
+}
+
+table tr:first-child td {
+  border-top: 1px solid #f4f3f3;
+}
+
+table td:nth-of-type(2) {
+  text-align: left;
+  padding-right: 15%;
+}
+
+table h1,
+table td:first-child {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+table td > h1 {
+  padding: 0;
+}
+
+table td > h3 {
+  padding: 10px 0 0;
+}
+
+table td > h3 a {
+  text-transform: none;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #316d06;
+}
+
+table td > img {
+  height: 50%;
+  vertical-align: middle;
+  text-align: center;
+}
