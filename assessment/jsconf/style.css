@@ -127,7 +127,9 @@ main .tickets p {
   font-size: 1.2rem;
 }
 
-.schedule {
+.schedule,
+.papers,
+.sponsors {
   margin: 0 20%;
 }
 
@@ -178,10 +180,6 @@ table td > img {
   padding-bottom: 15px;
 }
 
-.papers {
-  margin: 0 20%;
-}
-
 .papers p a:not(.green-btn) {
   text-transform: none;
   color: #316d06;
@@ -190,4 +188,8 @@ table td > img {
 
 .papers p a:not(.green-btn):hover {
   text-decoration: underline;
+}
+
+.sponsors h3 {
+  text-align: left;
 }
