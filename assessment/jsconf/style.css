@@ -22,6 +22,10 @@ body {
   background-color: #316d06;
 }
 
+header {
+  text-align: center;
+}
+
 header nav {
   padding: 10px 0;
   border-top: 10px solid #f4f3f3;
@@ -53,6 +57,7 @@ nav a:hover {
 
 .wallpaper {
   padding: 0;
+  text-align: center;
 }
 
 .wallpaper figure {
@@ -63,8 +68,6 @@ nav a:hover {
   margin: 0 auto 1px;
   box-sizing: border-box;
 }
-
-header, main { text-align: center; }
 
 main {
   margin: 0 auto;
@@ -90,11 +93,16 @@ h1, p {
   font-weight: 300;
 }
 
-main h1 {
+main div > h1 {
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 2.3rem;
   color: #3c3c3c;
   padding: 60px 0 30px;
+  text-align: center;
+}
+
+.tickets {
+  text-align: center;
 }
 
 main .tickets p {
@@ -124,7 +132,8 @@ main .tickets p {
 .speakers .speaker h2 {
   color: #316d06;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  padding: 0 0 10px;
 }
 
 .schedule,
@@ -192,4 +201,17 @@ table td > img {
 
 .sponsors h3 {
   text-align: left;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0 0 15px;
+  color: #3c3c3c;
 }
+
+.sponsors img {
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+
+.sponsors img:nth-last-child(-n+4) {
+  width: 23%;
+} 
