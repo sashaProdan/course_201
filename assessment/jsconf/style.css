@@ -69,11 +69,6 @@ nav a:hover {
   box-sizing: border-box;
 }
 
-main {
-  margin: 0 auto;
-  width: 99%;
-}
-
 main div:first-child { height: 428px; }
 main figure h1,
 main figure h2 {
@@ -215,3 +210,51 @@ table td > img {
 .sponsors img:nth-last-child(-n+4) {
   width: 23%;
 } 
+
+.team {
+  background: url('images/people.jpg') no-repeat center;
+  background-size: cover;
+  height: 280px;
+  padding: 0 0 60px;
+  width: 100%;
+  margin: 0;
+}
+
+.team h1 {
+  padding: 30px 0;
+}
+
+.team h1,
+.team h2,
+.team p {
+  color: #fff;
+}
+
+.team h2,
+.team p,
+.team a.green-btn {
+  margin: 0 0 0 20%;
+}
+
+.team h2 {
+  font-size: 1.5rem;
+}
+
+.team p {
+  margin-bottom: 15px;
+}
+
+.team a:not(.green-btn) {
+  color: #3e8e05;
+  text-transform: none;
+  font-weight: 600;
+}
+
+.team a:hover:not(.green-btn) {
+  text-decoration: underline;
+}
+
+.dark-background {
+  background: rgba(0,0,0,0.8);
+  padding: 10px 0 30px;
+}
