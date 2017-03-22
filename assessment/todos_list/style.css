@@ -3,12 +3,16 @@ body {
 }
 
 nav {
-  float: left;
   width: 336px;
   height: 100vh;
   background-color: #464f77;
   color: #b2b5c3;
-  padding: 70px 0 0 0;
+  padding: 75px 0 0 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   box-sizing: border-box;
 }
 
@@ -42,12 +46,15 @@ nav ul li {
 
 nav ul li p,
 nav h1 + p {
-  float: right;
+  display: inline-block;
 }
 
 nav h1 + p {
   vertical-align: middle;
-  margin-right: 31px;
+}
+
+nav li > time {
+  padding-right: 103px;
 }
 
 nav h1,
@@ -58,7 +65,7 @@ nav > p {
 nav h1 {
   color: #f5f5f7;
   font-size: 18px;
-  padding: 0 0 11px 101px;
+  padding: 0 63px 11px 101px;
 }
 
 nav p,
@@ -84,12 +91,38 @@ nav ul:last-child li {
   color: #f5f5f7;
 }
 
+#nav-toggle {
+  display: none;
+}
+
+label[for="nav-toggle"] {
+  cursor: pointer;
+  position: fixed;
+  top: 23px;
+  left: 23%;
+  z-index: -1;
+}
+
+label:before {
+  content: "";
+  display: block;
+  width: 23px;
+  height: 18px;
+  background: url("images/menu-icon.jpg") 0 0 no-repeat;
+}
+
 main {
-  float: left;
-  width: 867px;
+  width: 54.187%;
+  height: 100vh;
+  margin: 0;
   background-color: #fff;
   color: #060606;
-  padding: 23px 0 0 20px;
+  padding: 75px 0 0 20px;
+  position: relative;
+  top: 0;
+  bottom: 100%;
+  left: 21%;
+  z-index: 1;
   box-sizing: border-box;
 }
 
@@ -100,12 +133,11 @@ main h2 + p {
 
 main h2 {
   font-size: 21px;
-  padding: 35px 19px 44px 14px;
+  padding: 0 19px 44px 14px;
 }
 
 main h2 + p {
   vertical-align: top;
-  margin-top: 35px;
 }
 
 main > a {
@@ -120,7 +152,7 @@ main ul li a {
   display: inline-block;
 }
 
-main ul li p:hover {
+main ul li p:not(.crossed-out):hover {
   color: #148fd5;
   cursor: pointer;
 }
@@ -136,7 +168,7 @@ main ul li:before {
   display: inline-block;
   vertical-align: middle;
   margin-right: 14px;
-  background: transparent url("images/check-box.jpg") 0 0 no-repeat;
+  background: url("images/check-box.jpg") 0 0 no-repeat;
 }
 
 main ul li {
@@ -155,4 +187,41 @@ main > ul li:last-child {
 .crossed-out {
   color: #b3b3b3;
   text-decoration: line-through;
+}
+
+main ul li:nth-of-type(3):before,
+main ul li:nth-of-type(4):before,
+main ul li:nth-of-type(5):before {
+  background: url("images/checked.jpg") 0 0 no-repeat;
+}
+
+@media (max-width: 768px) {
+  
+  main {
+    width: 85%;
+    z-index: 0;
+    left: 0;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  label[for="nav-toggle"] {
+    left: 34px;
+    z-index: 1;
+  }
+
+  .nav-toggle:checked + label + #menu {
+    display: block;
+  }
+
+  .nav-toggle:checked + label + #menu + main {
+    left: 336px;
+
+  }
+
+  .nav-toggle:checked + label {
+    left: 370px;
+  }
 }
