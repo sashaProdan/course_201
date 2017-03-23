@@ -2,6 +2,12 @@ body {
   font: 16px normal Helvetica, Arial, sans-serif;
 }
 
+/*
+  ----------------
+    Menu section
+  ----------------
+*/
+ 
 nav {
   width: 336px;
   height: 100vh;
@@ -103,13 +109,19 @@ label[for="nav-toggle"] {
   z-index: -1;
 }
 
-label:before {
+label[for="nav-toggle"]:before {
   content: "";
   display: block;
   width: 23px;
   height: 18px;
   background: url("images/menu-icon.jpg") 0 0 no-repeat;
 }
+
+/*
+  ----------------
+    Main Content
+  ----------------
+*/
 
 main {
   width: 54.187%;
@@ -121,7 +133,7 @@ main {
   position: relative;
   top: 0;
   bottom: 100%;
-  left: 21%;
+  left: 336px;
   z-index: 1;
   box-sizing: border-box;
 }
@@ -195,8 +207,20 @@ main ul li:nth-of-type(5):before {
   background: url("images/checked.jpg") 0 0 no-repeat;
 }
 
+input.modal-toggle { display: none; }
+
+.modal-toggle:checked ~ div.modal {
+  display: block;
+  z-index: 1;
+}
+
+/*
+  -----------------
+    Media Queries
+  -----------------
+*/
+
 @media (max-width: 768px) {
-  
   main {
     width: 85%;
     z-index: 0;
@@ -224,4 +248,102 @@ main ul li:nth-of-type(5):before {
   .nav-toggle:checked + label {
     left: 370px;
   }
+}
+
+/*
+  ----------------
+    Modal Window
+  ----------------
+*/
+
+.modal {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+form {
+  font-size: 16px;
+  width: 577px;
+  height: auto;
+  padding: 31px 31px 0;
+  position: fixed;
+  top: 25%;
+  left: 30%;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+form dl dt,
+form dl dd {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  margin-bottom: 26px;
+  box-sizing: border-box;
+}
+
+form dl dt {
+  width: 25%;
+  padding-right: 20px;
+  margin-top: 10px;
+}
+
+form dl dd  {
+  width: 70%;
+}
+
+form dl dd input,
+form dl dd textarea,
+form dl dd select{
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+form input,
+form textarea,
+form dd.options {
+  border: 1px solid #b3b3b3;
+}
+
+form select {
+  background-color: #fff;
+  border-style: none;
+}
+
+form dd .options:nth-of-type(3) {
+  margin-right: 0;
+}
+
+form textarea {
+  resize: none;
+}
+
+form dd.options {
+  width: 24%;
+  border: 1px solid #b3b3b3;
+
+}
+
+form input[type="submit"] {
+  background-color: #148fd5;
+  color: #fff;
+  border: none;
+  width: 180px;
+  border-radius: 3px;
+  font-size: 16px;
+  padding: 10px;
+  display: inline-block;
+  margin: 0 0 31px 0;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+form dl + input[type="submit"] {
+  margin-left: 135px;
 }

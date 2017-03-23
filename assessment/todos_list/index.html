@@ -9,7 +9,6 @@
   <body>
     <input type="checkbox" id="nav-toggle" class="nav-toggle" />
     <label for="nav-toggle"></label>
-
     <nav id="menu">
       <h1>All Todos</h1>
       <p>18</p>
@@ -57,7 +56,54 @@
       <a href="#">+ Add new to do</a>
       <ul>
         <li>
-          <p>Item 1</p>
+          <label>
+            <input type="checkbox" class="modal-toggle">
+            <p>Item 1</p>
+            <div class="modal">
+              <form action="#" method="post">
+                <dl>
+                  <dt><label for="title">Title</label></dt>
+                  <dd><input type="text" name="title" id="title" placeholder="Item 1"></dd>
+
+                  <dt><label for="due-date">Due Date</label></dt>
+                  <dd class="options">
+                    <select name="due-date" id="day">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option selected>16</option>
+                    </select>
+                  </dd>
+                  <dd class="options">
+                    <select name="due-date" id="month">
+                      <option selected>Month</option>
+                      <option>Jan</option>
+                      <option>Feb</option>
+                      <option>Mar</option>
+                      <option>Apr</option>
+                      <option>May</option>
+                    </select>
+                  </dd>
+                  <dd class="options">
+                    <select name="due-date" id="year">
+                      <option selected>Year</option>
+                      <option>2011</option>
+                      <option>2012</option>
+                      <option>2013</option>
+                    </select>
+                  </dd>
+                  <dt><label for="description">Description</label></dt>
+                  <dd>
+                    <textarea name="description" id="description" placeholder="Description" cols="10" rows="8"></textarea>
+                  </dd>
+                </dl>
+                <input type="submit" value="Save">
+               <input type="submit" value="Mark As Complete">
+              </form>
+            </div>
+          </label>
           <a href="#"><img src="images/trash-bin.jpg" alt=""></a>
         </li>
         <li>
