@@ -211,7 +211,6 @@ input.modal-toggle { display: none; }
 
 .modal-toggle:checked ~ div.modal {
   display: block;
-  z-index: 1;
 }
 
 /*
@@ -314,10 +313,6 @@ form dd.options {
 form select {
   background-color: #fff;
   border-style: none;
-}
-
-form dd .options:nth-of-type(3) {
-  margin-right: 0;
 }
 
 form textarea {
