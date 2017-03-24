@@ -13,7 +13,7 @@ nav {
   height: 100vh;
   background-color: #464f77;
   color: #b2b5c3;
-  padding: 75px 0 0 0;
+  padding: 68px 0 0 0;
   position: fixed;
   top: 0;
   right: 0;
@@ -41,12 +41,12 @@ nav h1:nth-of-type(2):before {
 }
 
 nav ul:nth-of-type(1) {
-  margin-bottom: 54px;
+  margin-bottom: 60px;
 }
 
 nav ul li {
   width: 100%;
-  padding: 14px 31px 14px 137px;
+  padding: 13px 31px 13px 137px;
   box-sizing: border-box;  
 }
 
@@ -145,7 +145,7 @@ main h2 + p {
 
 main h2 {
   font-size: 21px;
-  padding: 0 19px 44px 14px;
+  padding: 0 19px 45px 14px;
 }
 
 main h2 + p {
@@ -155,8 +155,17 @@ main h2 + p {
 main > a {
   text-decoration: none;
   color: #148fd5;
-  padding: 16px 0 17px 14px;
+  padding: 0 0 17px 14px;
   display: block;
+}
+
+main > a:before {
+  content: "+";
+  font-size: 25px;
+  margin-right: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  color: #148fd5;;
 }
 
 main ul li p,
@@ -164,7 +173,8 @@ main ul li a {
   display: inline-block;
 }
 
-main ul li p:not(.crossed-out):hover {
+main ul li p:not(.crossed-out):hover,
+main ul li label:nth-of-type(1):hover {
   color: #148fd5;
   cursor: pointer;
 }
@@ -207,9 +217,15 @@ main ul li:nth-of-type(5):before {
   background: url("images/checked.jpg") 0 0 no-repeat;
 }
 
-input.modal-toggle { display: none; }
+main label:nth-of-type(1) {
+  cursor: pointer;
+}
 
-.modal-toggle:checked ~ div.modal {
+input.modal-toggle { 
+  display: none;
+}
+
+.modal-toggle:checked + div.modal {
   display: block;
 }
 
@@ -256,7 +272,7 @@ input.modal-toggle { display: none; }
 */
 
 .modal {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   right: 0;
@@ -270,7 +286,7 @@ form {
   width: 577px;
   height: auto;
   padding: 31px 31px 0;
-  position: fixed;
+  position: absolute;
   top: 25%;
   left: 30%;
   background-color: #fff;
@@ -280,10 +296,13 @@ form {
 form dl dt,
 form dl dd {
   display: inline-block;
-  vertical-align: top;
   margin: 0;
   margin-bottom: 26px;
   box-sizing: border-box;
+}
+
+form label {
+  vertical-align: middle;
 }
 
 form dl dt {
@@ -296,9 +315,16 @@ form dl dd  {
   width: 70%;
 }
 
+/*  Forward slash  */
+form dl dd select:before {
+  content: "/";
+  display: inline-block;
+  font-size: 16px;
+}
+
 form dl dd input,
 form dl dd textarea,
-form dl dd select{
+form dl dd > select{
   width: 100%;
   padding: 10px;
   font-size: 16px;

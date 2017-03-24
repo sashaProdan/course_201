@@ -46,64 +46,61 @@
         <li><time datetime="2015-04">04/15</time></li>
         <li><time datetime="2015-05">05/15</time></li>
         <li><time datetime="2015-02">06/15</time></li>
-        <li><time datetime="2015-02">06/15</time></li>
       </ul>
     </nav>
     
     <main>
       <h2><time datetime="2016-02">02/16</time></h2>
       <p class="selected-count">8</p>
-      <a href="#">+ Add new to do</a>
+      <a href="#">Add new to do</a>
       <ul>
         <li>
-          <label>
-            <input type="checkbox" class="modal-toggle">
-            <p>Item 1</p>
-            <div class="modal">
-              <form action="#" method="post">
-                <dl>
-                  <dt><label for="title">Title</label></dt>
-                  <dd><input type="text" name="title" id="title" placeholder="Item 1"></dd>
+          <label for="modal-toggle">Item 1</label>
+          <input type="checkbox" id="modal-toggle" class="modal-toggle">
+          <div class="modal">
+            <form action="#" method="post">
+              <dl>
+                <dt><label for="title">Title</label></dt>
+                <dd><input type="text" name="title" id="title" placeholder="Item 1"></dd>
 
-                  <dt><label for="due-date">Due Date</label></dt>
-                  <dd class="options">
-                    <select name="due-date" id="day">
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                      <option selected>16</option>
-                    </select>
-                  </dd>
-                  <dd class="options">
-                    <select name="due-date" id="month">
-                      <option selected>Month</option>
-                      <option>Jan</option>
-                      <option>Feb</option>
-                      <option>Mar</option>
-                      <option>Apr</option>
-                      <option>May</option>
-                    </select>
-                  </dd>
-                  <dd class="options">
-                    <select name="due-date" id="year">
-                      <option selected>Year</option>
-                      <option>2011</option>
-                      <option>2012</option>
-                      <option>2013</option>
-                    </select>
-                  </dd>
-                  <dt><label for="description">Description</label></dt>
-                  <dd>
-                    <textarea name="description" id="description" placeholder="Description" cols="10" rows="8"></textarea>
-                  </dd>
-                </dl>
-                <input type="submit" value="Save">
-                <input type="submit" value="Mark As Complete">
-              </form>
-            </div>
-          </label>
+                <dt><label>Due Date</label></dt>
+                <dd class="options">
+                  <select name="day">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option selected>16</option>
+                  </select>
+                </dd>
+                <dd class="options">
+                  <select name="month">
+                    <option selected>Month</option>
+                    <option>Jan</option>
+                    <option>Feb</option>
+                    <option>Mar</option>
+                    <option>Apr</option>
+                    <option>May</option>
+                  </select>
+                </dd>
+                <dd class="options">
+                  <select name="year">
+                    <option selected>Year</option>
+                    <option>2011</option>
+                    <option>2012</option>
+                    <option>2013</option>
+                  </select>
+                </dd>
+                <dt><label for="description">Description</label></dt>
+                <dd>
+                  <textarea name="description" id="description" placeholder="Description" cols="10" rows="8"></textarea>
+                </dd>
+              </dl>
+              <input type="submit" value="Save">
+              <input type="submit" value="Mark As Complete">
+            </form>
+          </div>
           <a href="#"><img src="images/trash-bin.jpg" alt=""></a>
         </li>
         <li>
