@@ -198,11 +198,11 @@ main ul li {
   padding: 16px 0 17px 14px;
 }
 
-main > ul li:first-child {
+main ul li:first-child {
   border-top: 1px solid #e7e7e7;
 }
 
-main > ul li:last-child {
+main ul li:last-child {
   border-bottom: none;
 }
 
@@ -293,62 +293,57 @@ form {
   box-sizing: border-box;
 }
 
-form dl dt,
-form dl dd {
+form label,
+form input,
+form textarea,
+form div.select-group {
   display: inline-block;
-  margin: 0;
-  margin-bottom: 26px;
   box-sizing: border-box;
 }
 
-form label {
-  vertical-align: middle;
-}
-
-form dl dt {
-  width: 25%;
-  padding-right: 20px;
-  margin-top: 10px;
-}
-
-form dl dd  {
-  width: 70%;
-}
-
-/*  Forward slash  */
-form dl dd select:before {
-  content: "/";
-  display: inline-block;
-  font-size: 16px;
-}
-
-form dl dd input,
-form dl dd textarea,
-form dl dd > select{
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
+form input,
+form div.select-group,
+form textarea {
+  margin-bottom: 26px;
+  border: 1px solid #b3b3b3;
 }
 
 form input,
 form textarea,
-form dd.options {
-  border: 1px solid #b3b3b3;
+form .select-group select {
+  font-size: 16px;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  width: 75%;
+}
+
+form label {
+  vertical-align: top;
+  margin: 10px 20px 0 0;
+  width: 20%;
+}
+
+form div.select-group {
+  width: 22.5%;
+  padding: 7px;
 }
 
 form select {
   background-color: #fff;
   border-style: none;
+  width: 100%;
+  
+}
+
+span {
+  margin: 0 3px;
 }
 
 form textarea {
   resize: none;
-}
-
-form dd.options {
-  width: 24%;
-  border: 1px solid #b3b3b3;
-
 }
 
 form input[type="submit"] {
@@ -365,6 +360,6 @@ form input[type="submit"] {
   box-sizing: border-box;
 }
 
-form dl + input[type="submit"] {
-  margin-left: 135px;
+form input[value="Save"] {
+  margin: 0 10px 0 128px;
 }

@@ -59,44 +59,41 @@
           <input type="checkbox" id="modal-toggle" class="modal-toggle">
           <div class="modal">
             <form action="#" method="post">
-              <dl>
-                <dt><label for="title">Title</label></dt>
-                <dd><input type="text" name="title" id="title" placeholder="Item 1"></dd>
-
-                <dt><label>Due Date</label></dt>
-                <dd class="options">
-                  <select name="day">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option selected>16</option>
-                  </select>
-                </dd>
-                <dd class="options">
-                  <select name="month">
-                    <option selected>Month</option>
-                    <option>Jan</option>
-                    <option>Feb</option>
-                    <option>Mar</option>
-                    <option>Apr</option>
-                    <option>May</option>
-                  </select>
-                </dd>
-                <dd class="options">
-                  <select name="year">
-                    <option selected>Year</option>
-                    <option>2011</option>
-                    <option>2012</option>
-                    <option>2013</option>
-                  </select>
-                </dd>
-                <dt><label for="description">Description</label></dt>
-                <dd>
-                  <textarea name="description" id="description" placeholder="Description" cols="10" rows="8"></textarea>
-                </dd>
-              </dl>
+              <label for="title">Title</label>
+              <input type="text" name="title" id="title" placeholder="Item 1">
+              <label>Due Date</label>
+              <div class="select-group">
+                <select name="day">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option selected>16</option>
+                </select>
+              </div>
+              <span>&sol;</span>
+              <div class="select-group">
+                <select name="month">
+                  <option selected>Month</option>
+                  <option>Jan</option>
+                  <option>Feb</option>
+                  <option>Mar</option>
+                  <option>Apr</option>
+                  <option>May</option>
+                </select>
+              </div>
+              <span>&sol;</span>
+              <div class="select-group">
+                <select name="year">
+                  <option selected>Year</option>
+                  <option>2011</option>
+                  <option>2012</option>
+                  <option>2013</option>
+                </select>
+              </div>
+              <label for="description">Description</label>
+              <textarea name="description" id="description" placeholder="Description" cols="10" rows="8"></textarea>
               <input type="submit" value="Save">
               <input type="submit" value="Mark As Complete">
             </form>
