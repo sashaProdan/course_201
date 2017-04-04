@@ -1,0 +1,106 @@
+body {
+  padding: 0 20px;
+  font: 100% Helvetica, Arial, sans-serif;
+}
+
+/*
+  --------------
+  Block elements
+  --------------
+*/
+
+div {
+  background: #74a4f2;
+}
+
+div p {
+  font-size: 20px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+body > h1 {
+  margin: 50px 0 20px;
+}
+
+body > h1:first-child {
+  color: #3371ce;
+}
+
+body > h1:nth-of-type(2) {
+  color: #b718ba;
+}
+
+body > h1:nth-of-type(3) {
+  color: #2c777a;
+}
+.square {
+  height: 50px;
+  width: 50px;
+}
+
+.margin {
+  margin: 50px 50px;
+}
+
+.padding {
+  padding: 40px 60px;
+  margin: 20px 0;
+  box-sizing: border-box;
+}
+
+/*
+  ---------------
+  Inline elements
+  ---------------
+*/
+
+a {
+  background: #db7db5;
+}
+
+.rectangle {
+  width: 150px;
+  height: 70px;
+}
+
+.short {
+  height: 20px;
+  width: 80px;
+}
+
+.inline-margin {
+  margin: 40px;
+}
+
+.inline-padding {
+  padding: 20px;
+}
+
+/*
+  ---------------------
+  Inline-block elements
+  ---------------------
+*/
+
+.inline-block {
+  background: #84e4e8;
+  display: inline-block;
+  width: 20px;
+}
+
+.wide {
+  width: 50px;
+}
+
+.very-wide {
+  width: 150px;
+}
+
+.tall {
+  height: 80px;
+}
+
+.very-tall {
+  height: 120px;
+}

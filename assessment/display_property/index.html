@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Display Property</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Block level Elements</h1>
+    <h3>Layout</h3>
+    <p>Each block level element begins on a new line.</p>
+    <div><p>1</p></div>
+    <div><p>2</p></div>
+    <div><p>3</p></div>
+
+    <h3>Width</h3>
+    <p>Block level elements have a default width of 100%, consuming the entire horizontal space available.<p>
+    <div><p>1</p></div>
+    <div><p>2</p></div>
+    <div><p>3</p></div>
+
+    <h3>Height</h3>
+    <p>Height depends on the content. The height will expand and contract vertically as necessary to accomodate its content.<p>
+    <div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <h3>Setting Height and Width properties</h3>
+    <p>Block level elements will accept height and width properties.</p>
+    <div class="square"><p>1</p></div>
+    <div class="rectangle"><p>2</p></div>
+    <div class="short"><p>3</p></div>
+    <h3>Margins</h3>
+    <p>Block level elements have left, right, top and bottom margins.</p>
+    <div class="margin"><p>1</p></div>
+    <div class="margin"><p>2</p></div>
+    <div class="margin"><p>3</p></div>
+    <h3>Paddings</h3>
+    <p>Block level elements have left, right, top and bottom paddings.</p>
+    <div class="padding">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="padding">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="padding">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+    <h1>Inline level Elements</h1>
+    <h3>Layout</h3>
+    <p>Inline level elements line up on the same line, one after another.</p>
+    <a href="#">Google</a>
+    <a href="#">Yahoo</a>
+    <a href="#">Yandex</a>
+    <h3>Width</h3>
+    <p>Occupy only the width their content requires.</p>
+    <a href="#">Google</a>
+    <a href="#">Excepteur sint occaecat cupidatat non proident.</a>
+    <a href="#">Aol</a>
+    <h3>Height</h3>
+    <p>Will expand and contract horizontally as necessary to accomodate its content.</p>
+    <a href="#">Google</a>
+    <a href="#"><img src="tag.jpg"></a>
+    <a href="#">Yandex</a>
+    <h3>Setting Height and Width Properties</h3>
+    <p>Width and height properties set on inline elements are ignored.</p>
+    <p><b>Width:</b> 50px, <b>height:</b> 50px - <a href="#" class="square">Google</a></p>
+    <p><b>Width:</b> 150px, <b>height:</b> 70px - <a href="#" class="rectangle">Google</a></p>
+    <p><b>Width:</b> 80px, <b>height:</b> 10px - <a href="#" class="short">Google</a></p>
+    <h3>Margins</h3>
+    <p>Top and bottom margins are not accepted</p>
+    <hr>
+    <a href="#" class="inline-margin">Google</a>
+    <a href="#" class="inline-margin">Yahoo</a>
+    <a href="#" class="inline-margin">Yandex</a>
+    <hr>
+    <h3>Paddings</h3>
+    <p>Paddings for inline level elements work on all four sides.</p>
+    <a href="#" class="inline-padding">Google</a>
+    <a href="#" class="inline-padding">Yahoo</a>
+    <a href="#" class="inline-padding">Yandex</a>
+
+    <h1>Inline-block level Elements</h1>
+    <h3>Layout</h3>
+    <p>Inline-block element will be displayed in line with other elements and will not begin on a new line.</p>
+    <div class="inline-block"><p>1</p></div>
+    <div class="inline-block"><p>2</p></div>
+    <div class="inline-block"><p>3</p></div>
+    <h3>Width</h3>
+    <p>Will accept width property.</p>
+    <div class="inline-block"><p>1</p></div>
+    <div class="inline-block wide"><p>2</p></div>
+    <div class="inline-block very-wide"><p>3</p></div>
+    <h3>Height</h3>
+    <p>Inline-block level elements also accept height property.</p>
+    <div class="inline-block"><p>1</p></div>
+    <div class="inline-block tall"><p>2</p></div>
+    <div class="inline-block very-tall"><p>3</p></div>
+    <h3>Margins</h3>
+    <p>Accept right, left, top and bottom margins</p>
+    <div class="inline-block margin"><p>1</p></div>
+    <div class="inline-block margin"><p>2</p></div>
+    <div class="inline-block margin"><p>3</p></div>
+    <h3>Paddings</h3>
+    <p>Accept left,right, top and bottom paddings</p>
+    <div class="inline-block padding"><p>1</p></div>
+    <div class="inline-block padding"><p>2</p></div>
+    <div class="inline-block padding"><p>3</p></div>
+  </body>
+</html>
